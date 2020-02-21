@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<div class="container">
+    <div class="wrapper">
+        <center>
+            <div class="post_title">
+                {{ object.title }} || by :  {{ object.author }}
+            </div>
+            <br> <hr><br>
+            <div class="post_body">
+                {{ object.body }}
+                <br><br>
+                <a href="{% url 'post_edit' object.pk %}">Update Post</a> || <a href="{% url 'post_delete' object.pk %}">Delete Post</a>
+            </div>
+        </center>
+    </div>
+</div>
+<br>  
+
+{% endblock content %}

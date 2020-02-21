@@ -1,0 +1,26 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+<div class="nav_right">
+    <a href="{% url 'post_new' %}">Add New Post</a>
+</div>
+<center>
+    <h2>
+        Home Page
+    </h2>
+</center>
+
+
+<ol>
+    {% for post in all_posts %}
+     <div class="post_title">
+            <a href="{% url 'post_detail' post.pk %}"> {{ post.title }} </a> || by :  {{ post.author }}
+     </div>
+     <br>  
+     <hr>
+    {% endfor %}
+
+</ol>
+
+{% endblock content %}

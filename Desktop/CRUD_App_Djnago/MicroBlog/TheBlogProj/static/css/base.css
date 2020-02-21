@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+.container{
+    width: 900px;
+}
+.wrapper{
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.post_title a{
+
+    text-decoration: none;
+    color: red;
+}
+
+.post_body{
+    margin: 0;
+    font-weight: 400;
+
+}
+
+.post_body a{
+    text-decoration: none;
+}
+.post_title a :hover{
+
+    text-decoration: none;
+    color: rgb(16, 204, 157);
+}
+.nav_right{
+    float: right;
+}
+.nav_right a{
+    text-decoration: none;
+    padding: 10px;
+}
